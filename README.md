@@ -115,6 +115,137 @@ The goal of this assignment was to **build a logistic regression model** that cl
 - Gained hands-on experience with `sklearn`, SMOTE, and visualization libraries.
 
 
-> **Note:** This project was completed as part of the Financial Data Analytics course at IBA. All code, insights, and conclusions are the result of independent work.
+> **Note:** This project was completed as part of the Financial Data Analytics course at IBA. All code, insights, and conclusions are the result of independent work
+
+# FDA Assignment 2 - Logistic Regression: Insurance Claim Fraud Detection  
+**Student Name:** Yashal Jamil  
+**Roll Number:** 26591  
+
+---
+
+## 📘 Project Overview  
+This assignment focused on building a **logistic regression model** to detect fraudulent insurance claims using a real-world dataset. The task involved data preprocessing, handling class imbalance, applying logistic regression, and evaluating the model using appropriate metrics.
+
+The project was implemented in Python using Jupyter Notebook, following a systematic machine learning workflow.
+
+---
+
+## 📁 Project Structure
+
+The assignment was divided into the following major components:
+
+- **Data Preprocessing & EDA**
+- **Class Imbalance Handling (SMOTE, class weights)**
+- **Model Building using Logistic Regression**
+- **Model Evaluation & Metrics Analysis**
+- **Insights and Recommendations for Fraud Detection**
+
+---
+
+## 📊 Step 1: Data Preprocessing & Exploratory Data Analysis
+
+**Objective:**  
+Clean the dataset, explore variable distributions, and understand the class balance.
+
+**Key Steps:**
+
+- Loaded and cleaned the dataset using `pandas`.
+- Visualized the distribution of fraudulent vs. non-fraudulent claims.
+- Detected and addressed class imbalance early in the process.
+
+**Insights:**
+
+- The dataset showed significant class imbalance.
+- Most features were numerical; few categorical variables required minimal encoding.
+
+---
+
+## ⚖️ Step 2: Handling Class Imbalance
+
+**Objective:**  
+Improve model learning by addressing skewed target classes.
+
+**Techniques Used:**
+
+- **SMOTE (Synthetic Minority Oversampling Technique)** to balance the dataset.
+- Compared with **undersampling** and **class-weight adjustments**.
+- Regularization was applied to prevent overfitting.
+
+**Result:**
+
+- SMOTE helped the model generalize better to minority (fraudulent) class.
+
+---
+
+## 📈 Step 3: Logistic Regression Model
+
+**Objective:**  
+Train a binary classification model using logistic regression.
+
+**Key Details:**
+
+- Used `train_test_split` (80/20 split).
+- Applied standard scaling for feature normalization.
+- Fitted logistic regression with regularization (L2 penalty).
+
+---
+
+## 📊 Step 4: Model Evaluation
+
+**Evaluation Metrics Used:**
+
+- **Accuracy**
+- **Precision**
+- **Recall**
+- **F1-Score**
+- **AUC-ROC Curve**
+- **Confusion Matrix**
+
+**Findings:**
+
+- Precision and recall trade-off was important due to fraud detection nature.
+- AUC-ROC score confirmed good model performance.
+- Confusion matrix helped identify False Negatives (missed frauds).
+
+---
+
+## 💡 Step 5: Insights & Recommendations
+
+**Strengths:**
+
+- Balanced model with good recall for fraud cases.
+- SMOTE improved minority class recognition significantly.
+
+**Improvements:**
+
+- Explore ensemble models (Random Forest, XGBoost) for better fraud capture.
+- Feature engineering on categorical variables (e.g., claim type, customer segment).
+- Use domain knowledge to include more predictive variables.
+
+---
+
+## ✅ Conclusion
+
+This assignment helped develop skills in:
+
+- Handling imbalanced datasets effectively.
+- Applying logistic regression for binary classification.
+- Evaluating classification models using multiple metrics.
+- Drawing actionable insights from machine learning output.
+
+The project mimicked real-world challenges in insurance fraud analytics and improved practical understanding of fraud detection models.
+
+---
+
+## 💻 Technologies Used
+
+- **Python**
+- **Jupyter Notebook**
+- **Libraries:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `imblearn`
+
+---
+
+> 📌 This project was submitted for the Financial Data Analytics course at IoBM. All work is original and completed independently, with AI assistance only used for formatting and presentation support.
+
 
 
