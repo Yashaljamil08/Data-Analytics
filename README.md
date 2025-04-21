@@ -64,3 +64,57 @@ This assignment helped apply foundational and advanced regression techniques and
 - Python  
 - Google Colab  
 - Libraries: `pandas`, `matplotlib`, `seaborn`, `sklearn`, `statsmodels`
+
+
+
+
+# 🚨 Insurance Claim Fraud Detection – Logistic Regression  
+*FDA Assignment 2 | Yashal Jamil – ERP: 26591*
+
+## 📌 Objective
+
+The goal of this assignment was to **build a logistic regression model** that classifies insurance claims as **fraudulent (1)** or **non-fraudulent (0)** using the provided dataset. This involved applying machine learning concepts such as data preprocessing, class balancing, model training, and evaluation.
+
+
+---
+
+## ⚙️ Workflow Summary
+
+### 1. 🧹 Data Preprocessing & EDA
+- Cleaned the dataset and handled missing values.
+- Analyzed class distribution of the target variable.
+- Visualized insights using matplotlib/seaborn.
+
+### 2. ⚖️ Handling Class Imbalance
+- Applied **SMOTE** to address imbalance in fraudulent vs. non-fraudulent cases.
+- Explored alternatives like undersampling and class weights.
+
+### 3. 📈 Logistic Regression Model
+- Implemented logistic regression using an 80/20 train-test split.
+- Optimized the model with regularization.
+
+### 4. 📊 Model Evaluation
+- Evaluated using:
+  - **Accuracy**
+  - **Precision**
+  - **Recall**
+  - **F1-score**
+  - **AUC-ROC**
+- Visualized confusion matrix to analyze false positives/negatives.
+
+### 5. 💡 Insights & Recommendations
+- Highlighted model strengths (e.g., fraud detection sensitivity).
+- Suggested improvements like feature engineering and trying ensemble models.
+
+---
+
+## 🧠 Key Learnings
+
+- Applied theoretical knowledge from class on logistic regression and model evaluation.
+- Understood the challenges of real-world fraud detection, especially class imbalance.
+- Gained hands-on experience with `sklearn`, SMOTE, and visualization libraries.
+
+
+> **Note:** This project was completed as part of the Financial Data Analytics course at IBA. All code, insights, and conclusions are the result of independent work.
+
+
