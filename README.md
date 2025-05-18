@@ -6,7 +6,7 @@ This assignment was based on executing and analyzing three Google Colab files us
 ## Project Structure  
 The assignment was divided into three key parts:
 
-1. **Simple Linear Regression (Salary vs Experience)**
+1. **Simple Linear Regression (Salary vs Experience)** (Linear_Regression_Salary.ipynb)
 2. **Multiple Linear Regression (Startup Profit Prediction)**
 3. **Advanced Linear Regression (Student Performance Analysis)**
 
