@@ -64,6 +64,7 @@ This assignment helped apply foundational and advanced regression techniques and
 - Google Colab  
 - Libraries: `pandas`, `matplotlib`, `seaborn`, `sklearn`, `statsmodels`
 
+---
 
 # FDA Assignment 2 - Logistic Regression: Insurance Claim Fraud Detection   
 
@@ -193,6 +194,7 @@ The project mimicked real-world challenges in insurance fraud analytics and impr
 - **Jupyter Notebook**
 - **Libraries:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `imblearn`
 
+---
 
 # FDA Assignment 3 - HSBC Customer Segmentation using K-Means Clustering
 This repository contains a machine learning project for customer segmentation using the K-Means clustering algorithm. The analysis is based on real-world HSBC customer data (under 35 years old) and aims to segment clients based on financial behaviors for improved Customer Life Cycle Management (CLCM) strategy.
