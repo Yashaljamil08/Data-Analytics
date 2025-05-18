@@ -138,24 +138,37 @@ Train a binary classification model using logistic regression.
 
 **Evaluation Metrics Used:**
 
-•	Accuracy: 0.986
-•	AUC-ROC Score: 0.62
-•	Classification Report:
-Class	          Precision	Recall	F1-Score	Support
-0 (Non-Fraud)	   0.99    	1.00	   0.99	     1980
-1 (Fraud)      	 0.00	    0.00	   0.00	      20
-o	Macro Avg F1: 0.50
-o	Weighted Avg F1: 0.98
+-	Accuracy: 0.986
+-	AUC-ROC Score: 0.62
+-	Classification Report:
+
+Class	 : 0 (Non-Fraud)	       		  	     
+
+Precision	: 0.99
+Recall	:  1.00
+F1-Score	:   0.99
+Support :  1980
+
+Class : 1 (Fraud) 
+
+Precision	: 0.00
+Recall	:  0.00
+F1-Score	:   0.00
+Support :  20
+
+-	Macro Avg F1: 0.50
+
+-	Weighted Avg F1: 0.98
 
 **Findings:**
 
-• Precision and recall trade-off was important due to fraud detection nature.
-• AUC-ROC score confirmed good model performance.
-• Confusion matrix helped identify False Negatives (missed frauds).
-•	Although overall accuracy is very high (98.6%), this is due to the dominance of non-fraud cases.
-•	The model failed to detect fraud cases (Recall = 0.00), indicating the class imbalance remains a critical issue.
-•	AUC-ROC score of 0.62 suggests the model has limited ability to separate fraud from non-fraud.
-•	Further action is needed to improve detection of the minority class.
+- Precision and recall trade-off was important due to fraud detection nature.
+- AUC-ROC score confirmed good model performance.
+- Confusion matrix helped identify False Negatives (missed frauds).
+-	Although overall accuracy is very high (98.6%), this is due to the dominance of non-fraud cases.
+-	The model failed to detect fraud cases (Recall = 0.00), indicating the class imbalance remains a critical issue.
+-	AUC-ROC score of 0.62 suggests the model has limited ability to separate fraud from non-fraud.
+-	Further action is needed to improve detection of the minority class.
 
 
 ---
