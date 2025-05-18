@@ -7,8 +7,8 @@ This assignment was based on executing and analyzing three Google Colab files us
 The assignment was divided into three key parts:
 
 1. **Simple Linear Regression (Salary vs Experience)** (Linear_Regression_Salary.ipynb)
-2. **Multiple Linear Regression (Startup Profit Prediction)**
-3. **Advanced Linear Regression (Student Performance Analysis)**
+2. **Multiple Linear Regression (Startup Profit Prediction)** (MLR_Startup_Profit.ipynb)
+3. **Advanced Linear Regression (Student Performance Analysis)** (1_studentp_Regression_Applied.ipynb)
 
 Each section included model implementation, result interpretation, and responses to relevant conceptual and practical questions.
 
