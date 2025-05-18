@@ -67,14 +67,12 @@ This assignment helped apply foundational and advanced regression techniques and
 
 # FDA Assignment 2 - Logistic Regression: Insurance Claim Fraud Detection   
 
-## 📘 Project Overview  
+##  Project Overview  
 This assignment focused on building a **logistic regression model** (Assignment_2_26591_FDA.ipynb) to detect fraudulent insurance claims using a real-world dataset. The task involved data preprocessing, handling class imbalance, applying logistic regression, and evaluating the model using appropriate metrics.
 
 The project was implemented in Python using Jupyter Notebook, following a systematic machine learning workflow.
 
----
-
-## 📁 Project Structure
+##  Project Structure
 
 The assignment was divided into the following major components:
 
@@ -84,9 +82,7 @@ The assignment was divided into the following major components:
 - **Model Evaluation & Metrics Analysis**
 - **Insights and Recommendations for Fraud Detection**
 
----
-
-## 📊 Step 1: Data Preprocessing & Exploratory Data Analysis
+##  Step 1: Data Preprocessing & Exploratory Data Analysis
 
 **Objective:**  
 Clean the dataset, explore variable distributions, and understand the class balance.
@@ -101,8 +97,6 @@ Clean the dataset, explore variable distributions, and understand the class bala
 
 - The dataset showed significant class imbalance.
 - Most features were numerical; few categorical variables required minimal encoding.
-
----
 
 ## ⚖️ Step 2: Handling Class Imbalance
 
@@ -119,7 +113,6 @@ Improve model learning by addressing skewed target classes.
 
 - SMOTE helped the model generalize better to minority (fraudulent) class.
 
----
 
 ## 📈 Step 3: Logistic Regression Model
 
@@ -132,7 +125,6 @@ Train a binary classification model using logistic regression.
 - Applied standard scaling for feature normalization.
 - Fitted logistic regression with regularization (L2 penalty).
 
----
 
 ## 📊 Step 4: Model Evaluation
 
@@ -142,14 +134,14 @@ Train a binary classification model using logistic regression.
 -	AUC-ROC Score: 0.62
 -	Classification Report:
 
-Class	 : 0 (Non-Fraud)	       		  	     
+**Class**	 : 0 (Non-Fraud)	       		  	     
 
 Precision	: 0.99
 Recall	:  1.00
 F1-Score	:   0.99
 Support :  1980
 
-Class : 1 (Fraud) 
+**Class** : 1 (Fraud) 
 
 Precision	: 0.00
 Recall	:  0.00
@@ -170,9 +162,6 @@ Support :  20
 -	AUC-ROC score of 0.62 suggests the model has limited ability to separate fraud from non-fraud.
 -	Further action is needed to improve detection of the minority class.
 
-
----
-
 ## 💡 Step 5: Insights & Recommendations
 
 **Strengths:**
@@ -186,9 +175,8 @@ Support :  20
 - Feature engineering on categorical variables (e.g., claim type, customer segment).
 - Use domain knowledge to include more predictive variables.
 
----
 
-## ✅ Conclusion
+##  Conclusion
 
 This assignment helped develop skills in:
 
@@ -199,18 +187,125 @@ This assignment helped develop skills in:
 
 The project mimicked real-world challenges in insurance fraud analytics and improved practical understanding of fraud detection models.
 
----
 
-## 💻 Technologies Used
+## Technologies Used
 
 - **Python**
 - **Jupyter Notebook**
 - **Libraries:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `imblearn`
 
----
+
+# FDA Assignment 3 - HSBC Customer Segmentation using K-Means Clustering
+This repository contains a machine learning project for customer segmentation using the K-Means clustering algorithm. The analysis is based on real-world HSBC customer data (under 35 years old) and aims to segment clients based on financial behaviors for improved Customer Life Cycle Management (CLCM) strategy.
+
+## Files Included
+- 26591-FDA assignment 3.ipynb: Jupyter notebook with full code for preprocessing, clustering, feature engineering, and evaluation.
+
+- HSBC_ST138D-XLS-ENG.xlsx: The original dataset (not uploaded to GitHub for privacy).
+
+- 26591-Assignment 3 analysis.pdf: Written report answering the four important questions.
+
+## Project Objective
+
+- Apply **K-Means Clustering** to segment customers based on financial behavior.
+- Perform both **top-down and bottom-up** segmentation approaches.
+- Create **new features** to improve clustering quality.
+- Use **exploratory data analysis**, **scaling**, and **visualization** techniques.
+- Provide actionable **business insights** for HSBC and local banks in Pakistan.
+- Use **Elbow Method** and **Silhouette Score** to determine the optimal number of clusters.
+
+## Process Overview
+
+1. **Import Libraries**  
+   Imported essential Python libraries such as `pandas`, `numpy`, `matplotlib`, `seaborn`, and `scikit-learn`.
+
+2. **Load Dataset**  
+   Loaded the HSBC customer dataset from Excel.
+
+3. **Data Cleaning**
+   - Converted `AGE` to numerical codes.
+   - Removed duplicates and reset index.
+
+4. **Exploratory Data Analysis (EDA)**
+   - Explored data types and summary statistics.
+   - Plotted feature distributions and correlation heatmap.
+
+5. **Feature Selection**
+   Selected behavior and product usage features such as:
+   `INCOME`, `TRB`, `DIG_ACTIVE`, `FX_TRANS`, `PAYME`, `CC`, `LN`, `MT`, `TD`, `SC`, `SP`, `BD`, and `MPF`.
+
+6. **Feature Scaling**
+   Scaled selected numeric features using `StandardScaler`.
+
+7. **K-Means Clustering**
+   - Applied KMeans clustering for various values of K:
+     - K = 1 to 10 → for **Elbow Method**
+     - K = 3, 4, 6 → for **cluster comparison**
+     - K = n (number of rows) and K > n → for **extreme testing**
+   - Evaluated each model using the **Silhouette Score**.
+  
+8. **Elbow Method**
+   - Plotted **Within-Cluster Sum of Squares (WCSS)** vs. K.
+   - Identified optimal K by observing the "elbow" point on the graph.
+
+9. **Cluster Assignment**
+   - Assigned cluster labels to each customer.
+   - Added a new column `Which_Cluster` to the dataframe.
+
+10. **Cluster Profiling**
+   - Calculated cluster-wise mean values and customer counts.
+   - Interpreted clusters based on financial behavior.
+
+## 🔧 Feature Engineering
+
+We engineered the following key features:
+
+- **Product Usage Flags** (e.g., `FX_TRANS`, `LN`, `MPF`) to capture customer banking activity.
+- **Digital Engagement** (`DIG_ACTIVE`) to identify tech-savvy users.
+- **Scaled Financial Metrics** like `INCOME`, `TRB`.
+
+### Impact:
+After adding behavioral features, cluster boundaries became more distinct and the **silhouette score improved**, indicating better-defined segments. This helped identify high-potential customers and low-engagement users more clearly.
+
+## Cluster Insights
+
+The clustering revealed 3 main customer types:
+
+- **Cluster 0**: Low-income, low-engagement users — potential attrition risk.
+- **Cluster 1**: Average-income users with moderate product usage — a good base for cross-selling.
+- **Cluster 2**: High-income, digitally active users with diversified financial behavior — top-tier customers for upselling.
+
+These insights can help HSBC:
+
+- Personalize marketing campaigns
+- Launch targeted financial products
+- Improve customer retention strategies
 
 
+## Top-Down vs Bottom-Up Segmentation
+
+- **Top-Down**: Applied K-Means clustering directly to behavioral data, then interpreted macro-level customer groups.
+- **Bottom-Up**: Created behavior-specific features (e.g., active user flags), then clustered to discover micro-segments.
+
+Both approaches provided different insights:  
+Top-down gave high-level strategic segments, while bottom-up helped identify tactical actions.
 
 
+## Learnings for Pakistani Financial Institutions
+
+If working for **UBL** , these clustering techniques could be replicated to:
+
+- Segment young customers in Pakistan by their digital engagement and financial behavior.
+- Identify underserved groups to expand product access.
+- Tailor financial literacy campaigns for low-engagement clusters.
+
+
+## Technologies Used
+
+- Python
+- Jupyter Notebook / Google Colab
+- Pandas, NumPy
+- Scikit-learn
+- Matplotlib, Seaborn
 
 
