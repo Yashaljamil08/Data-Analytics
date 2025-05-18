@@ -98,7 +98,7 @@ Clean the dataset, explore variable distributions, and understand the class bala
 - The dataset showed significant class imbalance.
 - Most features were numerical; few categorical variables required minimal encoding.
 
-## ⚖️ Step 2: Handling Class Imbalance
+## Step 2: Handling Class Imbalance
 
 **Objective:**  
 Improve model learning by addressing skewed target classes.
@@ -114,7 +114,7 @@ Improve model learning by addressing skewed target classes.
 - SMOTE helped the model generalize better to minority (fraudulent) class.
 
 
-## 📈 Step 3: Logistic Regression Model
+## Step 3: Logistic Regression Model
 
 **Objective:**  
 Train a binary classification model using logistic regression.
@@ -126,7 +126,7 @@ Train a binary classification model using logistic regression.
 - Fitted logistic regression with regularization (L2 penalty).
 
 
-## 📊 Step 4: Model Evaluation
+## Step 4: Model Evaluation
 
 **Evaluation Metrics Used:**
 
@@ -148,21 +148,20 @@ Recall	:  0.00
 F1-Score	:   0.00
 Support :  20
 
--	Macro Avg F1: 0.50
-
--	Weighted Avg F1: 0.98
+-Macro Avg F1: 0.50
+-Weighted Avg F1: 0.98
 
 **Findings:**
 
 - Precision and recall trade-off was important due to fraud detection nature.
 - AUC-ROC score confirmed good model performance.
 - Confusion matrix helped identify False Negatives (missed frauds).
--	Although overall accuracy is very high (98.6%), this is due to the dominance of non-fraud cases.
--	The model failed to detect fraud cases (Recall = 0.00), indicating the class imbalance remains a critical issue.
--	AUC-ROC score of 0.62 suggests the model has limited ability to separate fraud from non-fraud.
--	Further action is needed to improve detection of the minority class.
+- Although overall accuracy is very high (98.6%), this is due to the dominance of non-fraud cases.
+- The model failed to detect fraud cases (Recall = 0.00), indicating the class imbalance remains a critical issue.
+- AUC-ROC score of 0.62 suggests the model has limited ability to separate fraud from non-fraud.
+- Further action is needed to improve detection of the minority class.
 
-## 💡 Step 5: Insights & Recommendations
+## Step 5: Insights & Recommendations
 
 **Strengths:**
 
@@ -256,7 +255,7 @@ This repository contains a machine learning project for customer segmentation us
    - Calculated cluster-wise mean values and customer counts.
    - Interpreted clusters based on financial behavior.
 
-## 🔧 Feature Engineering
+## Feature Engineering
 
 We engineered the following key features:
 
