@@ -58,6 +58,7 @@ Predict the student performance index based on multiple study-related factors.
 
 This assignment helped apply foundational and advanced regression techniques and evaluate the effects of data quality, variable significance, and model tuning. Each section provided hands-on experience with real-world datasets and enhanced interpretation skills relevant to business and academic scenarios.
 
+
 ## Technologies Used  
 - Python  
 - Google Colab  
@@ -67,7 +68,7 @@ This assignment helped apply foundational and advanced regression techniques and
 # FDA Assignment 2 - Logistic Regression: Insurance Claim Fraud Detection   
 
 ## 📘 Project Overview  
-This assignment focused on building a **logistic regression model** to detect fraudulent insurance claims using a real-world dataset. The task involved data preprocessing, handling class imbalance, applying logistic regression, and evaluating the model using appropriate metrics.
+This assignment focused on building a **logistic regression model** (Assignment_2_26591_FDA.ipynb) to detect fraudulent insurance claims using a real-world dataset. The task involved data preprocessing, handling class imbalance, applying logistic regression, and evaluating the model using appropriate metrics.
 
 The project was implemented in Python using Jupyter Notebook, following a systematic machine learning workflow.
 
@@ -137,18 +138,25 @@ Train a binary classification model using logistic regression.
 
 **Evaluation Metrics Used:**
 
-- **Accuracy**
-- **Precision**
-- **Recall**
-- **F1-Score**
-- **AUC-ROC Curve**
-- **Confusion Matrix**
+•	Accuracy: 0.986
+•	AUC-ROC Score: 0.62
+•	Classification Report:
+Class	          Precision	Recall	F1-Score	Support
+0 (Non-Fraud)	   0.99    	1.00	   0.99	     1980
+1 (Fraud)      	 0.00	    0.00	   0.00	      20
+o	Macro Avg F1: 0.50
+o	Weighted Avg F1: 0.98
 
 **Findings:**
 
-- Precision and recall trade-off was important due to fraud detection nature.
-- AUC-ROC score confirmed good model performance.
-- Confusion matrix helped identify False Negatives (missed frauds).
+• Precision and recall trade-off was important due to fraud detection nature.
+• AUC-ROC score confirmed good model performance.
+• Confusion matrix helped identify False Negatives (missed frauds).
+•	Although overall accuracy is very high (98.6%), this is due to the dominance of non-fraud cases.
+•	The model failed to detect fraud cases (Recall = 0.00), indicating the class imbalance remains a critical issue.
+•	AUC-ROC score of 0.62 suggests the model has limited ability to separate fraud from non-fraud.
+•	Further action is needed to improve detection of the minority class.
+
 
 ---
 
@@ -187,6 +195,8 @@ The project mimicked real-world challenges in insurance fraud analytics and impr
 - **Libraries:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `imblearn`
 
 ---
+
+
 
 
 
